@@ -17,18 +17,18 @@
     background-color: #f7930651;
 }
 
-.featured__left{
+.about__featured>.featured__left{
    background-color: #fff;
 }
 
-.featured__right{
+.about__featured>.featured__right{
     background-color: #f28e8e;
  }
 
 
 /* /////////////////// */
 /* ------------ Content Projects ------------ */
-.content__project {
+.content__projects {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -43,5 +43,11 @@
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: #f7930651;
+    background-color: #f79306dd;
 }
+.project__featured>.featured__left{
+    background-color: #e03f3f;
+ }
+ .project__featured>.featured__right{
+    background-color: #55f377;
+ }
