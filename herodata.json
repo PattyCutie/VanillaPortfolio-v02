@@ -1,0 +1,17 @@
+{
+  "herodata": {
+    "fullName": "Patpicha Sitthitrai",
+    "image": "assets/195111_n-PhotoRoom.png",
+    "jobPosition": "Mega menu Sidebar",
+    "description": "Full Stack Web Deleveloper",
+    "email": "1234abcdef@emailmail.com",
+    "website": "www.thisismyportwebsite.com"
+  },
+  
+  "aboutdata": {
+    "title": "this is title and header",
+    "subtitle": "this is subtitle",
+    "description": "this is about description",
+    "image": "this is about image"
+  }
+}

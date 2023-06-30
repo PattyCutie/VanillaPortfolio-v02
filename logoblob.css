@@ -1,0 +1,53 @@
+/* Add logo here */
+.logo__blob {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__blob::before {
+    border: 2px solid #EAE7FA;
+    border-radius: 58% 42% 48% 36% / 28% 60% 36% 53%;
+    width: 100%;
+    height: 80%;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: rotate 16s linear infinite;
+}
+
+.logo__blob::after {
+    border: 2px solid #EAE7FA;
+    border-radius: 48% 42% 48% 53% / 47% 60% 36% 53%;
+    width: 90%;
+    height: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        border-color: #A58CB3;
+    }
+
+    50% {
+        border-color: #838BC2;
+    }
+
+
+    100% {
+        transform: rotate(360deg);
+        border-color: #EAE7FA;
+    }
+}
+

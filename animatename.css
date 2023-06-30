@@ -1,0 +1,74 @@
+/* Float Name tag dec */
+.decorname__name {
+    animation: morph 8s linear infinite;
+
+}
+
+@keyframes morph {
+
+    0%,
+    100% {
+        opacity: 0.1;
+    }
+
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+
+    50% {
+        opacity: 0.65;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    68% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
+}
+
+/* Main side decor */
+.hero__sidedecormain {
+    animation: maindecorrotate 100s linear infinite;
+
+}
+
+@keyframes maindecorrotate {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
+/* Second side decor */
+.hero__sidedecorsubmain>svg {
+    animation: subdecorblink 60s linear infinite;
+}
+
+@keyframes subdecorblink {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+        left: inherit;
+    }
+
+    50% {
+        opacity: 0.5;
+        left: 50%;
+    }
+
+    100% {
+        transform: rotate(360deg) scale(10);
+        opacity: 0.1;
+        left: 100%;
+    }
+}
