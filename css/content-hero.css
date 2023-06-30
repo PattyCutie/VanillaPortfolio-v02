@@ -119,17 +119,18 @@
 }
 
 .top__jobposition {
+    display: flex;
+    gap: 20px;
     font-family: 'Inconsolata', monospace;
-    font-weight: 900;
+    font-weight: 100;
     font-size: 2.5rem;
     color: #838BC2;
     word-spacing: 10px;
 }
 
-.top__jobposition>span {
+.top__jobposition>.top__jobpositioncursor{
     border: 4px solid #EAE7FA;
     font-size: 1.5rem;
-    margin-left: 20px;
 }
 
 .top__desc {
