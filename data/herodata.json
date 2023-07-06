@@ -3,14 +3,13 @@
     "fullName": "Patpicha Sitthitrai",
     "image": "assets/195111_n-PhotoRoom.png",
     "jobPosition": "Full Stack Web Deleveloper",
-    "description": "",
-    "email": "1234abcdef@emailmail.com",
-    "website": "www.thisismyportwebsite.com"
+    "description": "Debugging code is like being a detective in a murder mystery – except the murderer is always you from a few hours ago, and the weapon is a misplaced semicolon.",
+    "email": "patpicha.sit@gmail.com",
+    "website": "www.viberace.com"
   },
-  
   "aboutdata": {
-    "title": "this is title and header",
-    "subtitle": "this is subtitle",
+    "title": "About me",
+    "subtitle": "Bring code to live is my passion <😸 />",
     "description": "this is about description",
     "image": "this is about image"
   }

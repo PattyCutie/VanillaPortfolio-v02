@@ -9,6 +9,10 @@ fetch("data/herodata.json")
     document.getElementById("heroFullName").textContent = herodata.fullName;
     document.getElementById("heroJobPosition").textContent =
       herodata.jobPosition;
+    document.getElementById("heroDescription").textContent =
+      herodata.description;
+    document.getElementById("heroEmail").textContent = herodata.email;
+    document.getElementById("heroWebsite").textContent = herodata.website;
   })
   .catch((error) => {
     console.log("Error fetching JSON data:", error);

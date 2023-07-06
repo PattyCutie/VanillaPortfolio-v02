@@ -5,11 +5,13 @@
 
 /* Main Content */
 .home__content {
+    position: relative;
+    top: 60px;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #FFFDFA;
+    background-color: var(--bg-color-main);
     /* Firefox */
     scrollbar-width: none;
     scrollbar-color: #838BC2 transparent;
@@ -128,7 +130,7 @@
     word-spacing: 10px;
 }
 
-.top__jobposition>.top__jobpositioncursor{
+.top__jobposition>.top__jobpositioncursor {
     border: 4px solid #EAE7FA;
     font-size: 1.5rem;
 }
@@ -361,28 +363,27 @@
     position: absolute;
     display: flex;
     justify-content: center;
+    justify-items: center;
     width: auto;
     height: 100vh;
     top: 0;
-    right: -100px;
+    right: 0;
 }
 
 .profileimage__imageblob {
-    position: relative;
     z-index: 20;
-    width: 100%;
-    height: 100%;
+    width: clamp(50vw, 240px, 640px);
 }
 
-.profileimage__decor {
+.profileimage__imagedecor {
     position: absolute;
     fill: #eae7facc;
     z-index: 10;
     display: flex;
-    width: 100px;
     height: auto;
     bottom: 10%;
-    right: 70%;
+    right: 65%;
+    width: clamp(18vw, 120px, 240px);
 }
 
 /* /////////////////////////////////////////////////////// */

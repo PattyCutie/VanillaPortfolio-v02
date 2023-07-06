@@ -1,0 +1,24 @@
+/* Float about image */
+.left__aboutimage>img {
+    animation: aboutfloat 8s linear infinite;
+
+}
+
+@keyframes aboutfloat  {
+
+    0% {
+        transform: translate3d(0, 10px, 0) rotateZ(4deg) scale(1);
+    }
+
+    40% {
+        transform: translate3d(0, 5px, 0) rotateZ(2deg);
+    }
+
+    60% {
+        transform: translate3d(0, 5px, 0) rotateZ(2deg);
+    }
+
+    100% {
+        transform: translate3d(0, 10px, 0) rotateZ(4deg) scale(1.1);
+    }
+}

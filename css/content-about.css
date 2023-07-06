@@ -1,36 +1,334 @@
 /* ------------ Content About ------------ */
 .content__about {
     position: relative;
-    width: 100%;
+    top: 60px;
+    /* because  header in fixed position */
+    width: 100vw;
     height: 100vh;
     /* ++ */
     display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     scroll-snap-align: center;
-    background-color: #3803f8;
+    background-color: var(--bg-color-main);
 }
 
 .about__featured {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: #f7930651;
+    max-width: clamp(60vw, 240px, 640px);
+    overflow: hidden;
+    background: #b04cf3;
 }
 
-.about__featured>.featured__left{
-   background-color: #fff;
+.featured__top {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+    background-color: #e2c678;
 }
 
-.about__featured>.featured__right{
-    background-color: #f28e8e;
- }
+.top__aboutdetails {
+    display: flex;
+    padding: 5px;
+    width: clamp(50%, 240px, 640px);
+    background-color: #fff;
+}
 
+.aboutdetail__title {
+    background-color: #1d617d;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex: 0.2;
+}
+
+.title__text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #eb6d6d;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: red;
+    font-size: 14px;
+    flex: 0.8;
+}
+
+.title__text::before {
+    flex: 1;
+    content: "";
+    padding: 1px;
+    margin: 10px;
+    background-color: red;
+}
+
+.about__maindetail {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #5f2f2f;
+}
+
+.maindetail__sociallinks {
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    background-color: #94ed6d;
+}
+
+.sociallinks__area {
+    background-color: rgb(228, 150, 150);
+}
+
+.area__socials {
+    display: flex;
+    gap: 20px;
+    background-color: #6782b0;
+}
+
+.area__socialtitle {
+    background: #ca2c10;
+    display: flex;
+    gap: 20px;
+}
+
+.links__title {
+    background-color: #7d8978;
+}
+
+.social__itemone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #e2a816;
+}
+
+.social__itemone>i {
+    color: #fff;
+    font-size: 24px;
+    background: #0e06f0;
+    padding: 2px;
+}
+
+.social__itemone>p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #0e06f0;
+}
+
+.social__itemtwo {
+    display: flex;
+    gap: 5px;
+    background-color: #204004;
+}
+
+.social__itemthree {
+    display: flex;
+    gap: 5px;
+    background-color: #6e1e5e;
+}
+
+/* -------------------------- */
+/* ------------featured bottom------------- */
+.featured__bottom {
+    display: flex;
+    padding: 4px;
+    overflow: hidden;
+    background-color: #f009d9;
+}
+
+.featured__bottom>.bottom__left {
+    padding: 4px;
+    flex: 1;
+    background-color: #8173d2;
+}
+/* main skill details */
+.left__mainskills {
+    display: flex;
+    background-color: #066e6e;
+}
+
+.mainskill__titleskill {
+    background-color: #91aebb;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    flex: 0.2;
+}
+
+.titleskill__text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: #ea8c8c;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: red;
+    font-size: 14px;
+    flex: 0.8;
+}
+
+.titleskill__text::before {
+    flex: 1;
+    content: "";
+    padding: 1px;
+    margin: 10px;
+    background-color: red;
+}
+
+.mainskill__detailsskills{
+    background: #c2bdbd;
+    padding: 5px;
+}
+.detailsskills__title{
+    background-color: #fff;
+}
+.detailsskills__body{
+    background-color: #86567c;
+}
+
+.detailsskills__skilllevels{
+    background: #02692b;
+}
+.skilllevel__skillbox{
+    display: flex;
+    flex-direction: column;
+}
+.skillbox__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------- */
+/* ----Featured Bottom right tools widget---- */
+.featured__bottom>.bottom__right {
+    display: flex;
+    flex: 1;
+    padding: 4px;
+    background-color: #e1900d;
+}
+
+.right__maintools {
+    display: flex;
+    flex: 1;
+    padding: 2px;
+    background-color: #09d551;
+}
+
+.maintool__toolwidgets {
+    display: flex;
+    flex: 1;
+    justify-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #e73f3f;
+}
+
+.toolwidget__widgetleft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    background-color: #61d2b0;
+}
+
+.toolwidget__widgetleft>.left__top {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e821bd;
+}
+
+.toolwidget__widgetleft>.left__bottom {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e821bd;
+}
+
+.toolwidget__widgetright {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    background-color: #61d2b0;
+}
+
+.toolwidget__widgetright>.right__top {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e821bd;
+}
+
+.toolwidget__widgetright>.right__bottom {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e821bd;
+}
+
+/* ----featureddecor---- */
+.featureddecor__left {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex: 0.5;
+    background-color: #5465ba;
+}
+
+.left__aboutimage>img {
+    z-index: 20;
+    position: relative;
+    bottom: -4%;
+    left: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(320px, 100vw, 540px);
+}
+
+.left__aboutsvgbg {
+    position: absolute;
+    z-index: 19;
+    bottom: -2%;
+    left: -120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(320px, 100vw, 540px);
+}
+
+.featureddecor__right {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    flex: 1;
+    background: #9f9f9f;
+
+}
 
 /* /////////////////// */
 /* ------------ Content Projects ------------ */
 .content__projects {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     /* ++ */
     display: flex;
@@ -41,13 +339,27 @@
 
 .project__featured {
     display: flex;
+    overflow: hidden;
     width: 100%;
     height: 100%;
     background-color: #f79306dd;
 }
-.project__featured>.featured__left{
+
+.project__featured>.featured__left {
     background-color: #e03f3f;
- }
- .project__featured>.featured__right{
+}
+
+.project__featured>.featured__right {
     background-color: #55f377;
- }
+}
+
+
+/* 
+6/7/23
+- improve class name 
+- changed header to fixed position
+- changed content__hero, about div to top 60px
+- chanded delete float 
+- and make parent to flex box then justtify it to end
+
+*/
