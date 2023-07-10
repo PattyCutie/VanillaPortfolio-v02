@@ -149,6 +149,7 @@
     flex: 1;
     background-color: #8173d2;
 }
+
 /* main skill details */
 .left__mainskills {
     display: flex;
@@ -184,24 +185,28 @@
     background-color: red;
 }
 
-.mainskill__detailsskills{
+.mainskill__detailsskills {
     background: #c2bdbd;
     padding: 5px;
 }
-.detailsskills__title{
+
+.detailsskills__title {
     background-color: #fff;
 }
-.detailsskills__body{
+
+.detailsskills__body {
     background-color: #86567c;
 }
 
-.detailsskills__skilllevels{
+.detailsskills__skilllevels {
     background: #02692b;
 }
-.skilllevel__skillbox{
+
+.skilllevel__skillbox {
     display: flex;
     flex-direction: column;
 }
+
 .skillbox__title {
     display: flex;
     justify-content: space-between;
@@ -328,6 +333,7 @@
 /* ------------ Content Projects ------------ */
 .content__projects {
     position: relative;
+    top: 0;
     width: 100vw;
     height: 100vh;
     /* ++ */
@@ -342,6 +348,7 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     background-color: #f79306dd;
 }
 
