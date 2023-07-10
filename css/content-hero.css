@@ -6,7 +6,7 @@
 /* Main Content */
 .home__content {
     position: relative;
-    top: 60px; 
+    top: 60px;
     width: 100%;
     height: 100%;
     overflow-x: hidden;
@@ -36,9 +36,11 @@
 /* Hero Section */
 .content__hero {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: calc(100vh - 60px);
-    /* ++ */
     overflow: hidden;
     scroll-snap-align: start;
 }
@@ -55,7 +57,7 @@
     color: #EAE7FA;
     font-size: 100px;
     letter-spacing: 2rem;
-    opacity: 0.1;
+    opacity: 1;
     transform: rotate(-20deg);
 }
 
@@ -85,10 +87,8 @@
     position: relative;
     z-index: 50;
     display: flex;
-    width: 100%;
+    width: clamp(50vw, 320px, 786px);
     height: 100%;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
     padding: 8px;
 }
@@ -284,6 +284,10 @@
     cursor: pointer;
 }
 
+.sociallink__main>i:hover {
+    transform: scale(1.2);
+}
+
 .sociallink__right {
     display: flex;
     gap: 20px;
@@ -293,6 +297,10 @@
     font-size: 1.2rem;
     cursor: pointer;
     color: #838BC2;
+}
+
+.sociallink__right>i:hover {
+    transform: scale(1.2);
 }
 
 /* //////////////// */
@@ -362,33 +370,30 @@
 .hero__profileimage {
     position: absolute;
     display: flex;
-    justify-content: center;
-    justify-items: center;
     padding: 5px;
     width: auto;
     height: 100%;
     top: 0;
     right: 0;
-    
-    background-color: #06efd02c;
+
 }
 
 .profileimage__imageblob {
     display: flex;
-    background: #f6030346;
     z-index: 20;
     width: clamp(50vw, 240px, 640px);
+    filter: drop-shadow(0px 0px 20px rgba(131, 139, 194, 0.6));
 }
+
 
 .profileimage__imagedecor {
     position: absolute;
     fill: #eae7facc;
     z-index: 10;
     display: flex;
-    height: auto;
-    bottom: 10%;
-    right: 65%;
-    width: clamp(18vw, 120px, 240px);
+    align-items: end;
+    height: 100%;
+    width: clamp(15vw, 120px, 240px);
 }
 
 /* /////////////////////////////////////////////////////// */

@@ -3,11 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 :root {
+    /* Background */
     --bg-color-main: #fffdfa;
+    /* text */
     --color_main: #838bc2;
     --color_submain: #EAE7FA;
     --color_mini: #A58CB3;
-    --color_focus: #D9A1A0;    
+    --color_focus: #D9A1A0;
+    --color_gray: #eee;
 }
 
 
@@ -38,7 +41,7 @@ body {
     height: 60px;
     /* height: is optional */
     background-color: #fffdfa;
-    border-bottom: 1px solid rgb(131, 139, 194,0.15);
+    border-bottom: 1px solid rgb(131, 139, 194, 0.15);
     -webkit-box-shadow: 0px 0px 15px 10px rgb(131, 139, 194, 0.15);
     box-shadow: 0px 0px 15px 10px rgb(131, 139, 194, 0.15);
 }
@@ -104,6 +107,11 @@ body {
     color: #838BC2;
     font-size: 20px;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.right__socials>i:hover {
+    transform: scale(1.2);
 }
 
 .right__divinder,
@@ -129,6 +137,11 @@ body {
     cursor: pointer;
     color: #EAE7FA;
     font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.button__search>i:hover {
+    transform: scale(1.2);
 }
 
 .contact__btn {
@@ -143,10 +156,35 @@ body {
     border-radius: 6px;
     transition: all 0.25s ease-in-out;
 }
+
 .contact__btn:hover {
     transform: scale(1.05);
 }
+
 .contact__btn:active {
     transform: scale(0.95);
 }
+
 /* //////////////////////////////// */
+
+
+@media screen and (max-width: 320px),
+screen and (max-height: 540px) {
+    .header__logo {
+        flex: 1;
+        justify-content: center;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__right {
+        display: none;
+    }
+
+    .right__divinder,
+    .logo__divinder {
+        display: none;
+    }
+}
