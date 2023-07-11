@@ -30,7 +30,7 @@ body {
 }
 
 .home__header {
-    position: sticky;
+    position: fixed;
     /* make header fixed to top */
     top: 0px;
     z-index: 99;

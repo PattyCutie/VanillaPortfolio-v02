@@ -3,13 +3,14 @@
 .content__projects {
     position: relative;
     top: 0;
-    width: 100vw;
-    height: 100vh;
+    /* because  header in sticky position */
+    width: 100%;
+    height: calc(100vh - 60px);
     /* ++ */
-    display: flex;
     overflow: hidden;
-    scroll-snap-align: center;
-    background-color: #145571;
+    scroll-snap-align: start;
+    background-color: var(--bg-color-main);
+    border: 2px solid #095c97;
 }
 
 .project__featured {
@@ -17,8 +18,7 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    background-color: #f79306dd;
+    background-color: #f8c681;
 }
 
 .project__featured>.featured__left {
