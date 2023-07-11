@@ -10,7 +10,7 @@
     overflow: hidden;
     scroll-snap-align: start;
     background-color: var(--bg-color-main);
-    border: 2px solid #095c97;
+    border: 8px solid #095c97;
 }
 
 .project__featured {

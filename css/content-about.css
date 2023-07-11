@@ -21,7 +21,7 @@
     height: 100%;
     width: clamp(60vw, 240px, 640px);
     margin: 0 auto;
-    background: #b04cf3;
+    background-color: #945035;
 }
 
 /* about featured top content */
@@ -30,28 +30,29 @@
     justify-content: end;
     width: 100%;
     padding: 5px;
-    background-color: #e2c678;
+    background-color: #f5d19b;
 }
 
 .top__aboutdetails {
     display: flex;
     padding: 5px;
     width: clamp(50%, 240px, 640px);
-    background-color: #fff;
+    background-color: #a45239;
+
 }
 
 .aboutdetail__title {
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: end;
     flex: 0.5;
+    background-color: #2c19d2;
+
 }
 
 .title__text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    background-color: #f57474;
     position: relative;
     display: flex;
     align-items: center;
@@ -76,7 +77,6 @@
 .about__maindetail {
     display: flex;
     flex-direction: column;
-    background: #b26666;
     padding: 5px;
     gap: 20px;
 }
@@ -110,12 +110,10 @@
 .sociallinks__area {
     display: flex;
     flex-direction: column;
-    background-color: rgb(228, 150, 150);
     gap: 20px;
 }
 
 .area__socialtitle {
-    background: #ca2c10;
     display: flex;
     gap: 20px;
 }
@@ -198,40 +196,41 @@
 .featured__bottom {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     padding: 4px;
     overflow: hidden;
-    background-color: #f009d9;
+    background-color: #f5d19b;
 }
 
 .featured__bottom>.bottom__left {
-
+    background-color: #f6b451;
     padding: 4px;
     flex: 1;
     display: flex;
-    background-color: #8173d2;
 }
 
 /* main skill details */
 .left__mainskills {
     display: flex;
     padding: 40px 0;
-    background-color: #507e7e;
+    background-color: #226d31;
+
 }
 
 .mainskill__titleskill {
-    background-color: #16ed07;
     display: flex;
     flex-direction: column;
     align-items: end;
     padding: 4px;
     flex: 0.5;
+    background-color: #b1f860;
+
 }
 
 
 .titleskill__text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    background-color: #322f2f;
     position: relative;
     display: flex;
     align-items: center;
@@ -242,6 +241,8 @@
     letter-spacing: 2px;
     flex: 0.5;
     padding-bottom: 5px;
+    background-color: #fff7ec;
+
 }
 
 .titleskill__text::before {
@@ -249,19 +250,19 @@
     content: "";
     padding: 0.025rem;
     margin: 10px;
-    background-color: #a3a3a3;
 }
 
 .mainskill__detailsskills {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: #c2bdbd;
     padding: 5px;
+    background-color: #9bf5e2;
+
 }
 
 .detailsskills__title {
-    background-color: #fff;
+    background-color: #ef9797;
 }
 
 .detailsskills__title>h4 {
@@ -273,12 +274,12 @@
     text-transform: capitalize;
 }
 
-.detailsskills__body {
+/* .detailsskills__body {
     background-color: #aa2f8f;
-}
+} */
 
 .detailsskills__body>p {
-    color: #d3d3d3;
+    color: #a3a3a3;
     font-size: 0.8rem;
 }
 
@@ -287,7 +288,6 @@
     flex-direction: column;
     padding: 5px 0;
     gap: 20px;
-    background: #6a6d6c;
 }
 
 .skilllevel__skillbox {
@@ -334,14 +334,16 @@
     display: flex;
     flex: 1;
     padding: 4px;
-    background-color: #110de1;
+    background-color: #c57c0e;
+
 }
 
 .right__maintools {
     display: flex;
     flex: 1;
     padding: 2px;
-    background-color: #09d551;
+    background-color: #9b9bf5;
+
 }
 
 .maintool__toolwidgets {
@@ -350,7 +352,6 @@
     justify-items: center;
     justify-content: center;
     gap: 20px;
-    background-color: #e73f3f;
 }
 
 /* ------ */
@@ -359,7 +360,8 @@
     flex-direction: column;
     gap: 40px;
     padding-bottom: 40px;
-    background-color: #61d2b0;
+    background-color: #3dc225;
+
 }
 
 
@@ -409,7 +411,7 @@
     flex-direction: column;
     gap: 40px;
     padding-top: 40px;
-    background-color: #61d2b0;
+    background-color: #3dc225;
 }
 
 .toolwidget__widgetright>.right__top {
@@ -476,7 +478,7 @@
     opacity: 0.2;
     bottom: -220px;
     right: -60px;
-    width: clamp(50vw, 480px, 640px);
+    width: clamp(40vw, 480px, 640px);
 }
 
 .about__decorfour {
