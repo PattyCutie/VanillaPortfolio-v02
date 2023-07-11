@@ -30,9 +30,9 @@ body {
 }
 
 .home__header {
-    position: fixed;
-    /* make header fixed to top and resovle 100vh bigger than screen */
-    top: 0;
+    position: sticky;
+    /* make header fixed to top */
+    top: 0px;
     z-index: 99;
     display: flex;
     gap: 10px;

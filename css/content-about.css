@@ -1,7 +1,7 @@
 /* ------------ Content About ------------ */
 .content__about {
     position: relative;
-    top: 0;
+    top: 60px;
     /* because  header in fixed position */
     width: 100%;
     height: 100vh;
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: calc(100% - 60px);
     width: clamp(60vw, 240px, 640px);
     margin: 0 auto;
     background: #b04cf3;
