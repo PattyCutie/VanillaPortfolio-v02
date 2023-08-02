@@ -6,10 +6,10 @@
 /* Main Content */
 .home__content {
     position: relative;
-    padding: 60px 0;
     top: 60px;
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: var(--bg-color-main);
@@ -40,9 +40,8 @@
     top: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     overflow: hidden;
     scroll-snap-align: start;
 }
@@ -57,7 +56,7 @@
 .decorname__name {
     font-family: 'Gloria Hallelujah', cursive;
     color: #EAE7FA;
-    font-size: 100px;
+    font-size: 20px;
     letter-spacing: 2rem;
     opacity: 1;
     transform: rotate(-20deg);
@@ -67,16 +66,16 @@
     position: absolute;
     display: flex;
     width: fit-content;
-    height: 400px;
+    height: 100px;
     top: 200px;
-    left: -200px;
+    left: -50px;
 }
 
 .hero__sidedecorsubmain {
     position: absolute;
     display: flex;
     width: fit-content;
-    height: 200px;
+    height: 100px;
     bottom: 0;
     left: -50px;
 }
@@ -87,80 +86,101 @@
 .hero__details {
     /* add here */
     position: relative;
+    overflow: hidden;
     z-index: 50;
-    display: flex;
-    width: clamp(50vw, 320px, 786px);
+    width: clamp(50vw, 320px, 768px);
     height: 100%;
-    gap: 40px;
-    padding: 8px;
 }
 
 .details__detail {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    padding: 8px;
-    max-width: fit-content;
     justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .detail__top {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .top__name {
+    display: flex;
+    flex-direction: column;
     font-family: 'Inconsolata', monospace;
-    font-weight: 900;
-    font-size: 2.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
     word-spacing: 2px;
     color: #333;
 }
 
-.top__name>span {
+.top__name > span {
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
     color: #D9A1A0;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
-.top__jobposition {
+.top__jobPosition {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 50px;
     font-family: 'Inconsolata', monospace;
-    font-weight: 100;
-    font-size: 2.5rem;
     color: #838BC2;
-    word-spacing: 10px;
+    letter-spacing: 2px;
+    gap: 8px;
 }
 
-.top__jobposition>.top__jobpositioncursor {
-    border: 4px solid #EAE7FA;
-    font-size: 1.5rem;
-}
-
-.top__desc {
+.jobPosition__text {
+    display: flex;
+    flex-direction: column;
     color: #838BC2;
+    font-weight: 400;
     font-size: 0.85rem;
-    max-width: 72%;
 }
+
+.jobPosition__tagline {
+    display: flex;
+    gap: 4px;
+    margin-left: 8px;
+    color: #838BC2;
+    max-width: 280px;
+    font-size: 0.75rem;
+    font-weight: 200;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.tagline__decor {
+    margin-left: 4px;
+    border-left: 4px solid #EAE7FA;
+}
+
 
 /* ////////////////////// */
 /* detail bottom */
 .detail__bottom {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin: 20px 0;
+    gap: 10px;
 }
 
 .bottom__profile {
     display: flex;
-    gap: 20px;
-
+    flex-direction: column;
+    gap: 4px;
 }
 
 .profile__email {
     display: flex;
-    flex-direction: column;
     gap: 4px;
 }
 
@@ -178,7 +198,6 @@
 
 .profile__link {
     display: flex;
-    flex-direction: column;
     gap: 4px;
 }
 
@@ -200,7 +219,7 @@
     gap: 10px;
 }
 
-.bottom__contactlink>button {
+.bottom__contactlink > button {
     cursor: pointer;
     padding: 10px 20px;
     border: none;
@@ -213,9 +232,10 @@
     background-color: #838BC2;
 }
 
-.contaclink__downloadcv>h4 {
+.contaclink__downloadcv > h4 {
     letter-spacing: 2px;
     color: #fff;
+    font-size: 0.75rem;
 }
 
 .downloadcv__decor {
@@ -236,7 +256,7 @@
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .contactlink__hireme {
@@ -263,9 +283,8 @@
 /* Bottom Social Links */
 .bottom__sociallink {
     display: flex;
-    align-items: end;
+    width: fit-content;
     gap: 20px;
-    margin-top: 20px;
     transform: rotate(4deg);
 }
 
@@ -274,19 +293,19 @@
     gap: 10px;
 }
 
-.sociallink__main>p {
+.sociallink__main > p {
     font-size: 1rem;
     font-weight: 600;
     color: #333;
 }
 
-.sociallink__main>i {
+.sociallink__main > i {
     font-size: 1.2rem;
     color: #838BC2;
     cursor: pointer;
 }
 
-.sociallink__main>i:hover {
+.sociallink__main > i:hover {
     transform: scale(1.2);
 }
 
@@ -295,13 +314,13 @@
     gap: 20px;
 }
 
-.sociallink__right>i {
+.sociallink__right > i {
     font-size: 1.2rem;
     cursor: pointer;
     color: #838BC2;
 }
 
-.sociallink__right>i:hover {
+.sociallink__right > i:hover {
     transform: scale(1.2);
 }
 
@@ -309,9 +328,9 @@
 /* Bottom widget */
 .detail__herowidgets {
     position: relative;
-    display: flex;
-    gap: 20px;
-    margin: 40px 0;
+    display: none;
+    gap: 10px;
+    margin: 20px 0;
 }
 
 .herowidgets__items {
@@ -323,7 +342,7 @@
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
     -webkit-box-shadow: 0px 0px 15px 10px rgb(131, 139, 194, 0.15);
     box-shadow: 0px 0px 15px 10px rgb(131, 139, 194, 0.15);
-    transition: all 0.25s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .herowidgets__items:hover {
@@ -346,21 +365,21 @@
     justify-content: space-around;
 }
 
-.item__widgetone>.fa-check {
+.item__widgetone > .fa-check {
     padding: 4px;
     color: #fff;
     background-color: #838BC2;
     border-radius: 50%;
 }
 
-.item__widgettwo>.fa-check {
+.item__widgettwo > .fa-check {
     padding: 4px;
     color: #fff;
     background-color: #D9A1A0;
     border-radius: 50%;
 }
 
-.item__widgetthree>.fa-check {
+.item__widgetthree > .fa-check {
     padding: 4px;
     color: #838BC2;
     background-color: #EAE7FA;
@@ -371,31 +390,213 @@
 /* hero image area */
 .hero__profileimage {
     position: absolute;
+    top: 2%;
     display: flex;
-    padding: 5px;
-    width: auto;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
     height: 100%;
-    top: 0;
-    right: 0;
-
+    z-index: 20;
 }
 
 .profileimage__imageblob {
     display: flex;
-    z-index: 20;
-    width: clamp(50vw, 240px, 640px);
+    align-items: start;
+    justify-content: center;
     filter: drop-shadow(0px 0px 20px rgba(131, 139, 194, 0.6));
+    width: clamp(120px, 50vw, 640px);
+    height: auto;
 }
 
-
-.profileimage__imagedecor {
+.hero__imagedecor {
     position: absolute;
-    fill: #eae7facc;
+    top: 0;
+    right: 0;
     z-index: 10;
     display: flex;
     align-items: end;
+    justify-content: start;
+    width: 50vw;
     height: 100%;
-    width: clamp(15vw, 120px, 240px);
+}
+
+.imagedecor__blob {
+    fill: #eae7facc;
+    width: clamp(40px, 50vw, 240px);
+    height: auto;
+}
+
+/* ----------- */
+@media screen and (min-width: 320px) {
+    .details__detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+        height: 520px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /* hero detail & texts */
+    .details__detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        gap: 40px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .detail__top {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .top__name {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inconsolata', monospace;
+        font-weight: 400;
+        font-size: 2rem;
+        word-spacing: 2px;
+        color: #333;
+    }
+
+    .top__name > span {
+        font-weight: 400;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        color: #D9A1A0;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .top__jobPosition {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-family: 'Inconsolata', monospace;
+        color: #838BC2;
+        letter-spacing: 2px;
+        gap: 8px;
+    }
+
+    .jobPosition__text {
+        display: flex;
+        flex-direction: column;
+        color: #838BC2;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    .jobPosition__tagline {
+        display: flex;
+        gap: 4px;
+        margin-left: 8px;
+        color: #838BC2;
+        max-width: 280px;
+        font-size: 0.85rem;
+        font-weight: 200;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
+        font-style: italic;
+    }
+
+    .tagline__decor {
+        margin-left: 4px;
+        border-left: 4px solid #EAE7FA;
+    }
+
+    /* bottom widgets */
+    .detail__herowidgets {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* floating animate name */
+    .hero__decorname {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        z-index: 10;
+    }
+
+    .decorname__name {
+        font-family: 'Gloria Hallelujah', cursive;
+        color: #EAE7FA;
+        font-size: 100px;
+        letter-spacing: 2rem;
+        opacity: 1;
+        transform: rotate(-20deg);
+    }
+
+    /* side main decor items */
+    .hero__sidedecormain {
+        position: absolute;
+        display: flex;
+        width: fit-content;
+        height: 400px;
+        top: 200px;
+        left: -200px;
+    }
+
+    .hero__sidedecorsubmain {
+        position: absolute;
+        display: flex;
+        width: fit-content;
+        height: 200px;
+        bottom: 0;
+        left: -50px;
+    }
+
+    /* hero details */
+    .top__desc {
+        display: flex;
+    }
+
+    /* hero immage */
+    .hero__profileimage {
+        position: absolute;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100vw;
+        height: 100vh;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .detail__herowidgets {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    /* hero immage */
+    .hero__profileimage {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+    }
+
+    .profileimage__imageblob {
+        align-items: center;
+    }
 }
 
 /* /////////////////////////////////////////////////////// */
