@@ -8,8 +8,7 @@
     position: relative;
     top: 60px;
     width: 100vw;
-    height: 100%;
-    min-height: 100vh;
+    height: calc(100vh - 60px);
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: var(--bg-color-main);
@@ -88,7 +87,7 @@
     position: relative;
     overflow: hidden;
     z-index: 50;
-    width: clamp(50vw, 320px, 768px);
+    width: clamp(280px, 60vw, 1024px);
     height: 100%;
 }
 
@@ -96,8 +95,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px;
-    gap: 10px;
+    padding: 20px 10px;
+    gap: 20px;
     width: 100%;
     height: 100%;
 }
@@ -106,7 +105,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
 
 .top__name {
@@ -170,7 +169,7 @@
 .detail__bottom {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .bottom__profile {
@@ -329,20 +328,22 @@
 .detail__herowidgets {
     position: relative;
     display: none;
+    flex-direction: column;
     gap: 10px;
-    margin: 20px 0;
+    margin: 10px 0;
+    padding: 20px;
 }
 
 .herowidgets__items {
     display: flex;
-    padding: 8px;
     flex: 1;
+    padding: 6px;
+    min-width: 180px;
     border-radius: 6px;
     background-color: #FFFDFA;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
     -webkit-box-shadow: 0px 0px 15px 10px rgb(131, 139, 194, 0.15);
     box-shadow: 0px 0px 15px 10px rgb(131, 139, 194, 0.15);
-    transition: all 1s ease-in-out;
 }
 
 .herowidgets__items:hover {
@@ -360,7 +361,7 @@
     display: flex;
     flex: 1;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     padding: 8px;
     justify-content: space-around;
 }
@@ -384,6 +385,12 @@
     color: #838BC2;
     background-color: #EAE7FA;
     border-radius: 50%;
+}
+
+.widgetone__detail,
+.widgettwo__detail,
+.widgetthree__detail {
+    font-size: 0.85rem
 }
 
 /* /////////////////// */
@@ -427,18 +434,7 @@
 }
 
 /* ----------- */
-@media screen and (min-width: 320px) {
-    .details__detail {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        padding: 10px;
-        gap: 10px;
-        width: 100%;
-        height: 520px;
-    }
 
-}
 
 @media screen and (min-width: 768px) {
 
@@ -521,6 +517,7 @@
         flex-direction: column;
     }
 
+
     /* floating animate name */
     .hero__decorname {
         position: absolute;
@@ -579,7 +576,15 @@
     .detail__herowidgets {
         display: flex;
         flex-direction: row;
+    }
+
+    .top__name {
+        display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
     }
 
     /* hero immage */
@@ -597,6 +602,11 @@
     .profileimage__imageblob {
         align-items: center;
     }
+
+    .herowidgets__items {
+        padding: 20px;
+    }
+
 }
 
 /* /////////////////////////////////////////////////////// */
