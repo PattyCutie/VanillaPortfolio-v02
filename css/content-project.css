@@ -18,7 +18,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    width: clamp(280px, 60vw, 1024px);
+    width: clamp(280px, 80vw, 1024px);
     height: 100%;
     margin: 0 auto;
     padding: 20px;
