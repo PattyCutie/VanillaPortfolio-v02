@@ -5,12 +5,7 @@
     top: 0;
     /* because  header in fixed position */
     width: 100%;
-    height: calc(100vh - 60px);
-    /* ++ */
-    overflow: hidden;
-    scroll-snap-align: start;
     background-color: #838bc2;
-
 }
 
 .project__featured {
@@ -387,4 +382,14 @@
     width: 20px;
     height: 20px;
     fill: hsla(36, 100%, 99%, 0.4);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .content__projects {
+        height: calc(100vh - 60px);
+        overflow: hidden;
+        scroll-snap-align: start;    
+    }
+
 }

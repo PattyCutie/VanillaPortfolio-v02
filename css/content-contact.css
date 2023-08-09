@@ -3,14 +3,10 @@
     top: 0px;
     /* because  header in fixed position */
     width: 100%;
-    height: calc(100vh - 60px);
-    /* ++ */
-    overflow: hidden;
-    scroll-snap-align: start;
-    background-color: #838bc2;
+    background-color: #fffdfa;
 }
 
-.contact__bgDecor {
+/* .contact__bgDecor {
     position: absolute;
     z-index: 0;
     top: 0;
@@ -21,7 +17,7 @@
     border-left: 50vw solid #fffdfa;
     border-right: 50vw solid transparent;
     border-bottom: 50vh solid transparent;
-}
+} */
 
 .contactFeatured__options {
     position: relative;
@@ -29,7 +25,7 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
     width: 100%;
     height: 100%;
@@ -43,6 +39,14 @@
     padding: 20px;
     margin: 0 auto;
     width: clamp(280px, 40vw, 1024px);
+}
+
+.option__contactTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
 }
 
 .contactdetails__contactTitle {
@@ -62,6 +66,7 @@
 
 .option__contactBottom {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex: 1;
     gap: 40px;
@@ -69,10 +74,12 @@
 
 .option__contactLeft {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     flex: 1;
-    gap: 40px;
-    padding: 20px;
+    width: 100%;
+    gap: 20px;
+    padding: 8px;
 }
 
 .option__contactLeft > textarea {
@@ -81,11 +88,11 @@
     outline: none;
     padding: 12px;
     border-radius: 6px;
-    -webkit-box-shadow: 18px 18px 18px 5px rgba(131, 139, 194, 0.5);
-    -moz-box-shadow: 18px 18px 18px 5px rgba(131, 139, 194, 0.5);
-    box-shadow: 25px 18px 18px 5px rgba(131, 139, 194, 0.5);
-    width: clamp(280px, 25vw, 1024px);
-    height: 220px;
+    -webkit-box-shadow: 12px 12px 12px 2px rgba(131, 139, 194, 0.5);
+    -moz-box-shadow: 12px 12px 12px 2px rgba(131, 139, 194, 0.5);
+    box-shadow: 12px 12px 12px 2px rgba(131, 139, 194, 0.5);
+    width: clamp(180px, 25vw, 1024px);
+    height: 180px;
     background-color: #ebe7fa;
 }
 
@@ -117,32 +124,40 @@
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding: 0px 20px 40px 0;
     gap: 20px;
+    padding-bottom: 40px;
 }
 
 
 .contact__input {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-
+    gap: 4px;
 }
 
-.contact__input > input,
 label {
     font-family: 'Inconsolata', monospace;
-    width: 400px;
+}
+
+.contact__input > input {
+    font-family: 'Inconsolata', monospace;
     outline: none;
     border: none;
     padding: 12px 20px;
     border-radius: 6px;
-
+    background-color: #ebe7fa;
+    width: clamp(200px, 25vw, 1024px);
+    -webkit-box-shadow: 12px 12px 12px 2px rgba(131, 139, 194, 0.5);
+    -moz-box-shadow: 12px 12px 12px 2px rgba(131, 139, 194, 0.5);
+    box-shadow: 12px 12px 12px 2px rgba(131, 139, 194, 0.5);
 }
 
 
 .contact__input > button {
     cursor: pointer;
+    background-color: #ebe7fa;
     font-weight: 600;
     letter-spacing: 2px;
     font-family: 'Inconsolata', monospace;
@@ -162,10 +177,10 @@ label {
 .contactdecor__one {
     position: absolute;
     z-index: 10;
-    top: 8%;
-    left: 5%;
-    width: 200px;
-    height: 200px;
+    top: -5%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
     fill: rgb(131, 139, 194, 0.5);
 }
 
@@ -227,7 +242,7 @@ label {
     left: 18%;
     width: 18px;
     height: 18px;
-    fill: rgb(217, 161, 160, 0.6);
+    fill: rgba(235, 231, 250, 0.8);
 }
 
 .contactdecor__eight {
@@ -235,39 +250,39 @@ label {
     z-index: 10;
     bottom: 10%;
     left: 4%;
-    width: 18px;
-    height: 18px;
-    fill: rgba(217, 161, 160, 0.4);
+    width: 40px;
+    height: 40px;
+    fill: rgba(217, 161, 160);
 }
 
 .contactdecor__nine {
     position: absolute;
     z-index: 10;
-    bottom: 8%;
-    left: 36%;
-    width: 18px;
-    height: 18px;
-    fill: rgb(255, 253, 250, 0.5);
+    bottom: 10%;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    fill: rgb(165, 140, 179);
 }
 
 .contactdecor__ten {
     position: absolute;
     z-index: 10;
-    bottom: -5%;
-    left: 48%;
-    width: 80px;
-    height: 80px;
-    fill: rgb(255, 253, 250, 0.5);
+    bottom: -10%;
+    left: 40%;
+    width: 280px;
+    height: 280px;
+    fill: rgba(235, 231, 250, 0.8);
 }
 
 .contactdecor__eleven {
     position: absolute;
     z-index: 10;
     bottom: 28%;
-    right: 40%;
+    right: 5%;
     width: 30px;
     height: 30px;
-    fill: rgba(255, 253, 250, 0.6);
+    fill: rgb(235, 231, 250, 0.8);
 }
 
 .contactdecor__twelve {
@@ -283,9 +298,20 @@ label {
 .contactdecor__thirteen {
     position: absolute;
     z-index: 10;
-    top: 28%;
+    top: 55%;
     right: 10%;
     width: 20px;
     height: 20px;
     fill: rgba(217, 161, 160, 0.8);
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+    .content__contact {
+        height: calc(100vh - 60px);
+        overflow: hidden;
+        scroll-snap-align: start;
+
+    }
 }

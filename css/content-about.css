@@ -4,10 +4,6 @@
     top: 0;
     /* because  header in fixed position */
     width: 100%;
-    height: calc(100vh - 60px);
-    /* ++ */
-    overflow: hidden;
-    scroll-snap-align: start;
     background-color: var(--bg-color-main);
 }
 
@@ -19,22 +15,23 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    width: clamp(280px, 60vw, 1024px);
+    max-width: clamp(280px, 60vw, 1024px);
     margin: 0 auto;
-    padding: 5px;
+    padding: 20px 0;
 }
 
 /* about featured top content */
 .featured__top {
     display: flex;
     justify-content: end;
+    width: 100%;
     padding: 5px;
 }
 
 .top__aboutdetails {
     display: flex;
-    flex: 0.5;
-    padding: 5px;
+    width: 100%;
+    padding: 10px;
 }
 
 .aboutdetail__title {
@@ -64,18 +61,22 @@
     content: "";
     padding: 0.025rem;
     margin: 10px;
+    background-color: #a3a3a3;
 }
 
 .about__maindetail {
     display: flex;
     flex-direction: column;
-    padding: 5px;
-    gap: 20px;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.maindetail__title {
+    display: flex;
+    flex-direction: column;
 }
 
 .maindetail__title > h4 {
-    display: flex;
-    flex-direction: column;
     font-size: clamp(2rem, 2vw, 1.2rem);
     color: #333;
     font-family: 'Inconsolata', monospace;
@@ -112,7 +113,10 @@
 
 .area__socials {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
 }
 
 .social__itemone {
@@ -186,20 +190,19 @@
 .featured__bottom {
     display: flex;
     flex-wrap: wrap;
-    padding: 4px;
     overflow: hidden;
+    padding: 10px;
 }
 
-.featured__bottom > .bottom__left {
-    padding: 4px;
-    flex: 1;
+.bottom__left {
     display: flex;
+    flex: 1;
+    padding: 0 10px;
 }
 
 /* main skill details */
 .left__mainskills {
     display: flex;
-    padding: 40px 0;
 }
 
 .mainskill__titleskill {
@@ -231,6 +234,7 @@
     content: "";
     padding: 0.025rem;
     margin: 10px;
+    background-color: #a3a3a3;
 }
 
 .mainskill__detailsskills {
@@ -309,23 +313,25 @@
 
 /* ------- */
 /* ----Featured Bottom right tools widget---- */
-.featured__bottom > .bottom__right {
+.featured__bottom {
+    padding: 20px;
+    gap: 10px;
+}
+
+.bottom__right {
     display: flex;
     flex: 1;
-    padding: 4px;
-
 }
 
 .right__maintools {
     display: flex;
     flex: 1;
-    padding: 2px;
 }
 
 .maintool__toolwidgets {
     display: flex;
     flex: 1;
-    justify-items: center;
+    align-items: center;
     justify-content: center;
     gap: 20px;
 }
@@ -344,8 +350,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
@@ -359,14 +365,19 @@
     color: #838bc2;
 }
 
+.toolwidget__widgetleft > .left__top > p {
+    font-size: 0.85rem;
+}
+
+
 
 .toolwidget__widgetleft > .left__bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
@@ -378,6 +389,10 @@
 .toolwidget__widgetleft > .left__bottom > i {
     font-size: 40px;
     color: #838bc2;
+}
+
+.toolwidget__widgetleft > .left__bottom > p {
+    font-size: 0.85rem;
 }
 
 .toolwidget__widgetright {
@@ -392,8 +407,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
@@ -407,13 +422,17 @@
 
 }
 
+.toolwidget__widgetright > .right__top > p {
+    font-size: 0.85rem;
+}
+
 .toolwidget__widgetright > .right__bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
@@ -425,6 +444,10 @@
     font-size: 40px;
     color: #838bc2;
 
+}
+
+.toolwidget__widgetright > .right__bottom > p {
+    font-size: 0.85rem;
 }
 
 /* --------------------------------------- */
@@ -440,9 +463,10 @@
 .about__decortwo {
     position: absolute;
     z-index: 10;
-    top: 5%;
-    right: -120px;
-    width: clamp(240px, 5vw, 320px);
+    top: 40%;
+    right: 0;
+    width: clamp(40px, 5vw, 320px);
+    fill: rgba(217, 161, 160, 0.5);
 }
 
 .about__decorthree {
@@ -503,7 +527,7 @@
 }
 
 /* /////////////////// */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .featured__top {
         display: flex;
         justify-content: end;
@@ -511,6 +535,26 @@
         height: 50%;
         padding: 5px;
     }
+
+    .content__about {
+        height: calc(100vh - 60px);
+        /* ++ */
+        overflow: hidden;
+        scroll-snap-align: start;
+    }
+
+    .top__aboutdetails {
+        width: 50%;
+    }
+
+    .area__socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+    }
+    
 }
 
 /* ------------ Content Projects ------------ */
