@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
-    max-width: clamp(280px, 60vw, 1024px);
+    max-width: clamp(480px, 80vw, 1024px);
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -25,7 +25,7 @@
     display: flex;
     justify-content: end;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .top__aboutdetails {
@@ -46,13 +46,13 @@
     transform: rotate(180deg);
     position: relative;
     display: flex;
+    flex: 0.5;
     align-items: center;
     justify-content: space-between;
     color: #a3a3a3;
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 2px;
-    flex: 0.5;
     padding-bottom: 5px;
 }
 
@@ -189,9 +189,10 @@
 /* ------------featured bottom------------- */
 .featured__bottom {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     overflow: hidden;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .bottom__left {
@@ -212,7 +213,6 @@
     padding: 4px;
     flex: 0.5;
 }
-
 
 .titleskill__text {
     writing-mode: vertical-rl;
@@ -314,34 +314,41 @@
 /* ------- */
 /* ----Featured Bottom right tools widget---- */
 .featured__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     gap: 10px;
 }
 
 .bottom__right {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
 }
 
 .right__maintools {
     display: flex;
     flex: 1;
+    padding: 5px;
 }
 
 .maintool__toolwidgets {
     display: flex;
+    flex-direction: column;
     flex: 1;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 10px;
 }
 
 /* ------ */
 .toolwidget__widgetleft {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-bottom: 40px;
+    gap: 20px;
 }
 
 
@@ -350,8 +357,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 100px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
@@ -376,14 +383,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 100px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
     -webkit-box-shadow: 0px 0px 15px 10px rgb(131, 139, 194, 0.25);
     box-shadow: 0px 0px 15px 10px rgba(131, 139, 194, 0.25);
-
 }
 
 .toolwidget__widgetleft > .left__bottom > i {
@@ -398,8 +404,7 @@
 .toolwidget__widgetright {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-top: 40px;
+    gap: 20px;
 }
 
 .toolwidget__widgetright > .right__top {
@@ -407,8 +412,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 100px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
@@ -431,8 +436,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 100px;
     border-radius: 6px;
     background-color: #fffdfa;
     border-bottom: 1px solid rgb(131, 139, 194, 0.15);
@@ -539,7 +544,6 @@
     .content__about {
         height: calc(100vh - 60px);
         /* ++ */
-        overflow: hidden;
         scroll-snap-align: start;
     }
 
@@ -554,7 +558,19 @@
         align-items: start;
         gap: 10px;
     }
-    
+
+    .maintool__toolwidgets {
+        flex-direction: row;
+    }
+
+    .toolwidget__widgetleft {
+        padding-bottom: 40px;
+    }
+
+    .toolwidget__widgetright {
+        padding-top: 40px;
+
+    }
 }
 
 /* ------------ Content Projects ------------ */

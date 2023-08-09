@@ -5,7 +5,7 @@
     top: 0;
     /* because  header in fixed position */
     width: 100%;
-    background-color: #838bc2;
+    background-color: #fffdfa;
 }
 
 .project__featured {
@@ -20,6 +20,8 @@
 }
 
 .featured__projectTitle {
+    position: relative;
+    z-index: 50;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -38,20 +40,20 @@
     font-weight: 900;
     font-size: 2.5rem;
     word-spacing: 4px;
-    color: #ffffff;
+    color: #333;
 }
 
 .projectTitle__subTitle {
     font-weight: 600;
     font-size: 1.25rem;
-    color: #ffffff;
+    color: #333;
     font-family: 'Roboto', cursive, monospace;
 }
 
 .projectTitle__desc {
     font-weight: 400;
     font-size: 0.85rem;
-    color: #ffffff;
+    color: #333;
     font-family: 'Roboto', cursive, monospace;
 }
 
@@ -67,6 +69,8 @@
 }
 
 .projectList__projectItems {
+    position: relative;
+    z-index: 10;
     display: flex;
     min-width: 200px;
     flex-wrap: wrap;
@@ -83,11 +87,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #ffffff;
+    background: #ebe7fa;
     border-radius: 6px;
-    border-bottom: 1px solid rgb(131, 139, 194, 0.15);
-    -webkit-box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
-    box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgbrgb(131, 139, 194, 0.8);
+    -webkit-box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
+    box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
     width: clamp(220px, 100vw, 240px);
     height: 120px;
     grid-area: 1 / 1 / 2 / 2;
@@ -112,11 +116,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #ffffff;
+    background: #ebe7fa;
     border-radius: 6px;
-    border-bottom: 1px solid rgb(131, 139, 194, 0.15);
-    -webkit-box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
-    box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgbrgb(131, 139, 194, 0.8);
+    -webkit-box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
+    box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
     width: clamp(220px, 100vw, 240px);
     height: 120px;
     grid-area: 2 / 1 / 3 / 2;
@@ -141,11 +145,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #ffffff;
+    background: #ebe7fa;
     border-radius: 6px;
-    border-bottom: 1px solid rgb(131, 139, 194, 0.15);
-    -webkit-box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
-    box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgbrgb(131, 139, 194, 0.8);
+    -webkit-box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
+    box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
     width: clamp(220px, 100vw, 240px);
     height: 120px;
     grid-area: 3 / 1 / 4 / 2;
@@ -170,11 +174,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #ffffff;
+    background: #ebe7fa;
     border-radius: 6px;
-    border-bottom: 1px solid rgb(131, 139, 194, 0.15);
-    -webkit-box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
-    box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgbrgb(131, 139, 194, 0.8);
+    -webkit-box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
+    box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
     width: clamp(220px, 100vw, 240px);
     height: 120px;
     grid-area: 4 / 1 / 5 / 2;
@@ -199,11 +203,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #ffffff;
+    background: #ebe7fa;
     border-radius: 6px;
-    border-bottom: 1px solid rgb(131, 139, 194, 0.15);
-    -webkit-box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
-    box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgbrgb(131, 139, 194, 0.8);
+    -webkit-box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
+    box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
     width: clamp(220px, 100vw, 240px);
     height: 120px;
     grid-area: 5 / 1 / 6 / 2;
@@ -228,11 +232,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: #ffffff;
+    background: #ebe7fa;
     border-radius: 6px;
-    border-bottom: 1px solid rgb(131, 139, 194, 0.15);
-    -webkit-box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
-    box-shadow: 8px 8px 8px 2px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgbrgb(131, 139, 194, 0.8);
+    -webkit-box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
+    box-shadow: 8px 8px 8px 2px rgb(131, 139, 194, 0.5);
     width: clamp(220px, 100vw, 240px);
     height: 120px;
     grid-area: 6 / 1 / 7 / 2;
@@ -256,32 +260,31 @@
 .projedecor__one {
     position: absolute;
     z-index: 10;
-    top: 4%;
-    left: 30%;
-    width: 100px;
-    height: 100px;
-    fill: hsla(36, 100%, 99%, 0.4);
+    top: -10%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    fill: rgb(131, 139, 194);
 }
-
 
 .projedecor__two {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     top: 4%;
     left: 36%;
-    width: 20px;
-    height: 20px;
-    fill: rgba(255, 253, 250, 0.6);
+    width: 80px;
+    height: 80px;
+    fill: rgba(131, 139, 194, 0.6);
 }
 
 .projedecor__three {
     position: absolute;
     z-index: 10;
-    top: 18%;
-    right: 6%;
-    width: 20px;
-    height: 20px;
-    fill: rgba(217, 161, 160, 0.4);
+    top: 20%;
+    right: -5%;
+    width: 200px;
+    height: 200px;
+    fill: rgb(165, 140, 179, 0.5);
 }
 
 .projedecor__four {
@@ -289,9 +292,9 @@
     z-index: 10;
     top: 2%;
     right: 6%;
-    width: 28px;
-    height: 28px;
-    fill: rgba(255, 253, 250, 0.6);
+    width: 40px;
+    height: 40px;
+    fill: rgb(217, 161, 160, 0.5);
 }
 
 .projedecor__five {
@@ -301,7 +304,7 @@
     right: 2%;
     width: 18px;
     height: 18px;
-    fill: rgba(255, 253, 250, 0.6);
+    fill: rgb(131, 139, 194);
 }
 
 .projedecor__six {
@@ -309,9 +312,9 @@
     z-index: 10;
     top: 50%;
     left: 12%;
-    width: 18px;
-    height: 18px;
-    fill: rgba(255, 253, 250, 0.6);
+    width: 28px;
+    height: 28px;
+    fill: rgb(131, 139, 194, 0.5);
 }
 
 .projedecor__seven {
@@ -319,19 +322,19 @@
     z-index: 10;
     top: 60%;
     left: 18%;
-    width: 18px;
-    height: 18px;
-    fill: rgba(255, 253, 250, 0.6);
+    width: 40px;
+    height: 40px;
+    fill: #A58CB3;
 }
 
 .projedecor__eight {
     position: absolute;
     z-index: 10;
-    bottom: 30%;
-    left: 4%;
-    width: 18px;
-    height: 18px;
-    fill: rgba(217, 161, 160, 0.4);
+    bottom: 0%;
+    left: -5%;
+    width: 120px;
+    height: 120px;
+    fill: rgba(217, 161, 160, 0.5);
 }
 
 .projedecor__nine {
@@ -339,39 +342,39 @@
     z-index: 10;
     bottom: 8%;
     left: 36%;
-    width: 18px;
-    height: 18px;
-    fill: rgba(217, 161, 160, 0.4);
+    width: 40px;
+    height: 40px;
+    fill: rgb(131, 139, 194, 0.5);
 }
 
 .projedecor__ten {
     position: absolute;
     z-index: 10;
-    bottom: 16%;
-    left: 50%;
-    width: 18px;
-    height: 18px;
-    fill: rgba(217, 161, 160, 0.4);
+    bottom: 10%;
+    right: 10%;
+    width: 40px;
+    height: 40px;
+    fill: rgba(217, 161, 160, 0.6);
 }
 
 .projedecor__eleven {
     position: absolute;
     z-index: 10;
     bottom: 18%;
-    right: 38%;
-    width: 18px;
-    height: 18px;
-    fill: rgba(255, 253, 250, 0.6);
+    right: 20%;
+    width: 80px;
+    height: 80px;
+    fill: rgb(131, 139, 194, 0.5);
 }
 
 .projedecor__twelve {
     position: absolute;
     z-index: 10;
-    top: 30%;
-    right: 25%;
+    top: 20%;
+    right: 30%;
     width: 60px;
     height: 60px;
-    fill: hsla(36, 100%, 99%, 0.6);
+    fill: rgb(131, 139, 194);
 }
 
 .projedecor__thirteen {
@@ -381,15 +384,12 @@
     right: 24%;
     width: 20px;
     height: 20px;
-    fill: hsla(36, 100%, 99%, 0.4);
+    fill: rgb(131, 139, 194, 0.4);
 }
-
 
 @media screen and (min-width: 1024px) {
     .content__projects {
         height: calc(100vh - 60px);
-        overflow: hidden;
-        scroll-snap-align: start;    
+        scroll-snap-align: start;
     }
-
 }
